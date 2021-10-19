@@ -20,11 +20,13 @@ const Header = () => {
   return (
     <div className='sticky-top'>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <BiDonateBlood/>
-          <Link class="navbar-brand" href="#">
+        <div class="container-fluid bg-light">
+          <div className='d-flex align-items-center'>
+            <BiDonateBlood/>
+            <Link class="navbar-brand ms-2" href="#">
             Blood Bank
           </Link>
+          </div>
           <button
             class="navbar-toggler"
             type="button"
@@ -44,9 +46,6 @@ const Header = () => {
               <Link class="nav-link" to="/about">
                 About
               </Link>
-              <Link class="nav-link" to="/services">
-                Services
-              </Link>
               <Link class="nav-link" to="/blog">
                 Blog
               </Link>
@@ -60,6 +59,7 @@ const Header = () => {
               }
             </div>
           </div>
+          
         </div>
       </nav>
     </div>

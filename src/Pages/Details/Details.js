@@ -13,12 +13,12 @@ const Details = () => {
   );
   console.log(singleData);
   return (
-    <div>
+    <div className='container'>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">{singleData?.title}</h5>
           <p class="card-text">
-            {singleData?.description}
+            {singleData?.details}
           </p>
         </div>
         <img src={singleData?.img} class="card-img-bottom" alt="..." />

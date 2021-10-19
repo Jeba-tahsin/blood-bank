@@ -3,10 +3,11 @@ import {BsFacebook} from 'react-icons/bs';
 import {FaInstagramSquare} from 'react-icons/fa';
 import {BsTwitter} from 'react-icons/bs';
 import {FiPhoneCall} from 'react-icons/fi';
+import "./Footer.css";
 
 const Footer = () => {
     return (
-        <div className='mt-5 ' style={{backgroundColor:'black', padding:'10px'}}>
+        <div className='mt-5 footer' style={{ padding:'10px'}}>
             <h2>CONTACT US</h2>
             <p>Road-2/A East Shibgonh Sylhet-300, Bangladesh</p>
             <p>Cell:(+880) 0723 161 343</p>
