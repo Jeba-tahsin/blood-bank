@@ -8,9 +8,9 @@ import v4 from "../../../images/volunter/v4.jpg";
 
 const Volunteer = () => {
   return (
-    <div>
+    <div  className='mt-5 text-primary'>
         <h3>Our Volunteers</h3>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="row row-cols-1 row-cols-md-2 g-4 m-5 mt-0">
         <div class="col">
           <div class="card image">
             <div className='justify-content-center'>
@@ -19,9 +19,7 @@ const Volunteer = () => {
             <div class="card-body">
               <h5 class="card-title">Jhon Smith</h5>
               <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                He is the main leader of our group.
               </p>
             </div>
           </div>
@@ -34,9 +32,7 @@ const Volunteer = () => {
             <div class="card-body">
               <h5 class="card-title">Zara Topal</h5>
               <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+               She is the most friendly Volunteer.
               </p>
             </div>
           </div>
@@ -49,8 +45,7 @@ const Volunteer = () => {
             <div class="card-body">
               <h5 class="card-title">Ruhi Iplici</h5>
               <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content.
+                She manage the whole management.
               </p>
             </div>
           </div>
@@ -63,9 +58,7 @@ const Volunteer = () => {
             <div class="card-body">
               <h5 class="card-title">Ayesha Sayma</h5>
               <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                She is very friendly Volunteer.
               </p>
             </div>
           </div>

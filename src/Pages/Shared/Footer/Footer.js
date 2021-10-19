@@ -6,7 +6,7 @@ import {FiPhoneCall} from 'react-icons/fi';
 
 const Footer = () => {
     return (
-        <div className='mt-5' style={{backgroundColor:'pink', padding:'10px'}}>
+        <div className='mt-5 ' style={{backgroundColor:'black', padding:'10px'}}>
             <h2>CONTACT US</h2>
             <p>Road-2/A East Shibgonh Sylhet-300, Bangladesh</p>
             <p>Cell:(+880) 0723 161 343</p>

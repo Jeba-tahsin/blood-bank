@@ -9,9 +9,9 @@ const Services = () => {
   }, []);
   //console.log(services);
   return (
-    <div>
+    <div className='mt-5'>
       <h2 className="text-primary">Our services</h2>
-        <div className='row'>
+        <div className='row m-3'>
         {services.slice(1, 7).map((service1) => (
         <Service key={service1.id} service={service1}>
           {" "}

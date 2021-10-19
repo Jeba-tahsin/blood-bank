@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import {BiDonateBlood} from 'react-icons/bi'
+import { AuthContext } from "../../../Context/AuthProvider";
+import { getAuth, signOut } from "@firebase/auth";
 
 const Header = () => {
+  const [loginUser, setLoginUser] = useContext(AuthContext);
+
+  const handleLogout = () => {
+    const auth = getAuth();
+    signOut(auth)
+      .then(() => {
+        setLoginUser("");
+      })
+      .catch((error) => {
+      });
+  };
+
   return (
     <div className='sticky-top'>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -36,9 +50,14 @@ const Header = () => {
               <Link class="nav-link" to="/blog">
                 Blog
               </Link>
-              <Link class="nav-link" to="/login">
+              { loginUser?.email? <Link onClick={handleLogout} class="nav-link" to="/login">
+                logOut {''}{loginUser?.displayName}
+              </Link>
+                 :
+                <Link class="nav-link" to="/login">
                 login
               </Link>
+              }
             </div>
           </div>
         </div>

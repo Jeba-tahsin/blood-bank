@@ -38,25 +38,16 @@ const Banner = () => {
           <div class="carousel-item active" data-bs-interval="10000">
             <img src={banner1} class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
             <img src={banner2} class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
             </div>
           </div>
           <div class="carousel-item">
             <img src={banner3} class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
             </div>
           </div>
         </div>

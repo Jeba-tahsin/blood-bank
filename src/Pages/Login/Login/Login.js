@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { Link } from "react-router-dom";
 import initializeAuthorization from "../Firebase/firebase.init";
 import GoogleLogin from "../GoogleIn/GoogleLogin";
+import { AuthContext } from "../../../Context/AuthProvider";
+import {useHistory, useLocation} from 'react-router';
 
 initializeAuthorization();
 
@@ -14,6 +16,11 @@ const Login = () => {
 
     const [success, setSuccess] = useState('');
     const [errorMsg, setErrorMsg] = useState('');
+    const [loginUser, setLoginUser] = useContext(AuthContext);
+
+    const history = useHistory();
+  const location = useLocation();
+  let { from } = location.state || { from: { pathname: "/" } };
 
     //console.log('jeba', users);
     const getInput = (e) => {
@@ -27,6 +34,8 @@ const Login = () => {
         signInWithEmailAndPassword(auth, user.email, user.password)
           .then((userCredential) => {
             const user = userCredential.user;
+            setLoginUser(user);
+            history.replace(from)
             setSuccess('Login success')
                 setErrorMsg('');
           })
